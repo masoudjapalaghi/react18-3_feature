@@ -1,12 +1,10 @@
-const LazyPage = () => {
+const ActPage = () => {
   return (
     <div>
-      <h3>lazy lets you defer loading component’s code until it is rendered for the first time.</h3>A function that returns a Promise or another thenable (a Promise-like object with a then method).
-      React will not call load until the first time you attempt to render the returned component. After React first calls load, it will wait for it to resolve, and then render the resolved value’s
-      .default as a React component. Both the returned Promise and the Promise’s resolved value will be cached, so React will not call load more than once. If the Promise rejects, React will throw the
-      rejection reason for the nearest Error Boundary to handle.
+      When writing UI tests, tasks like rendering, user events, or data fetching can be considered as “units” of interaction with a user interface. React provides a helper called act() that makes sure
+      all updates related to these “units” have been processed and applied to the DOM before you make any assertions
     </div>
   );
 };
 
-export default LazyPage;
+export default ActPage;
