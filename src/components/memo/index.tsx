@@ -11,9 +11,11 @@ const MemoPage = () => {
       <button onClick={() => toggle1((prev) => !prev)}>click Me for toggle statusToggle1</button>
       {`  <||>   `}
       <button onClick={() => toggle2((prev) => !prev)}>click Me for toggle statusToggle2</button>
-      <ChildWithoutMemo status1={statusToggle1} />
-      <ChildByMemo  />
-      <ChildByCustomConfigForMemo status1={statusToggle1} status2={statusToggle2} />
+      <div style={{ display: "flex",justifyContent:"space-evenly" }}>
+        <ChildWithoutMemo status1={statusToggle1} />
+        <ChildByMemo />
+        <ChildByCustomConfigForMemo status1={statusToggle1} status2={statusToggle2} />
+      </div>
 
       <pre style={{ backgroundColor: "#858585", color: "black" }}>
         {`  

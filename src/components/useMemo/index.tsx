@@ -21,11 +21,12 @@ const UseMemo = () => {
   return (
     <div>
       <input onChange={(e) => setNameUser(e.target.value)} value={nameUser} />
-      <button onClick={() => toggle((prev) => !prev)}>click Me for toggle statusToggle</button>
-      :{statusToggle ? "is true" : "is false"}
-      <PrimitiveChid message={primitiveType} />
-      <RefeRenceTypeByUsMemo data={dataMemoized} />
-      <RefeRenceTypeWithoutUseMemo data={dataUnMemoized} />
+      <button onClick={() => toggle((prev) => !prev)}>click Me for toggle statusToggle</button>:{statusToggle ? "is true" : "is false"}
+      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+        <PrimitiveChid message={primitiveType} />
+        <RefeRenceTypeByUsMemo data={dataMemoized} />
+        <RefeRenceTypeWithoutUseMemo data={dataUnMemoized} />
+      </div>
       <pre style={{ backgroundColor: "#858585", color: "black" }}>
         {`  
 import { useMemo, useState } from "react";

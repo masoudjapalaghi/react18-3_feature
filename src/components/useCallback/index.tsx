@@ -15,8 +15,10 @@ const UseCallbackPage = () => {
   return (
     <div>
       statusToggle:{statusToggle ? "is true" : "is false"}
-      <RefeRenceTypeByUsCallBack handleToggle={handleToggleByUseCallBack} />
-      <RefeRenceTypeWithoutUseCallBack handleToggle={handleToggleWithoutUseCallBack} />
+      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+        <RefeRenceTypeByUsCallBack handleToggle={handleToggleByUseCallBack} />
+        <RefeRenceTypeWithoutUseCallBack handleToggle={handleToggleWithoutUseCallBack} />
+      </div>
       <pre style={{ backgroundColor: "#858585", color: "black" }}>
         {`  
 import { useCallback, useState } from "react";
