@@ -10,6 +10,9 @@ import CreateContext from "./components/createContext";
 import ForwardRef from "./components/forwardRef";
 import StartTransitionPage from "./components/startTransition";
 import UsePage from "./components/use";
+import MemoPage from "./components/memo";
+import UseMemo from "./components/useMemo";
+import UseCallbackPage from "./components/useCallback";
 
 function App() {
   return (
@@ -27,7 +30,7 @@ function App() {
         <Link to="/cachePage">cache (Canary)</Link>
         <Link to="/memoPage">memo</Link>
         <Link to="/useMemoPage">useMemo</Link>
-        <Link to="/useCallback">useCallBack</Link>
+        <Link to="/useCallbackPage">useCallBack</Link>
       </nav>
       <Routes>
         <Route path="/profilerPage" element={<ProfilerPage />} />
@@ -40,9 +43,9 @@ function App() {
         <Route path="/suspensePage" element={<SuspensePage />} />
         <Route path="/usePage" element={<UsePage />} />
         <Route path="/cachePage" element={<CachePage />} />
-        <Route path="/memoPage" element={<></>} />
-        <Route path="/useMemoPage" element={<></>} />
-        <Route path="/useCallbackPage" element={<></>} />
+        <Route path="/memoPage" element={<MemoPage />} />
+        <Route path="/useMemoPage" element={<UseMemo />} />
+        <Route path="/useCallbackPage" element={<UseCallbackPage />} />
       </Routes>
     </div>
   );
