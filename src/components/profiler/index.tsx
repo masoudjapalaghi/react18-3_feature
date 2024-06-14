@@ -1,4 +1,4 @@
-import React, { Profiler, ProfilerOnRenderCallback, useState } from "react";
+import  { Profiler, ProfilerOnRenderCallback, useState } from "react";
 import NestedUpdate from "./nestedUpdate";
 import { getRandomColor } from "../../utils";
 
