@@ -52,7 +52,7 @@ const SuspensePage = () => {
       <div>
         {/* <h4>useDeferredValue:</h4>
         <div> a React Hook that lets you defer updating a part of the UI.</div> */}
-        <a href="https://codesandbox.io/p/sandbox/wild-framework-mm976s?file=%2Fsrc%2FApp.js&utm_medium=sandpack">
+        <a href="https://codesandbox.io/s/k78jlv?file=%2Fsrc%2FApp.js&utm_medium=sandpack">
           example Showing stale content when refetch data.useDeferredValue:a React Hook that lets you defer updating a part of the UI.
         </a>
       </div>

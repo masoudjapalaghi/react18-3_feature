@@ -8,7 +8,7 @@ const StartTransitionPage = () => {
       <pre style={{ backgroundColor: "#858585", color: "black" }}>
         {`  
         const [filter, setFilter] = useState('');
-        const [items, setItems] = useState(allItems); // allItems یک آرایه بزرگ است
+        const [items, setItems] = useState(allItems);
 
         const handleInputChange = (e) => {
             const newFilter = e.target.value;
@@ -34,7 +34,7 @@ const StartTransitionPage = () => {
 
     function App() {
       const [filter, setFilter] = useState('');
-      const [items, setItems] = useState(allItems); // allItems یک آرایه بزرگ است
+      const [items, setItems] = useState(allItems);
     
       const handleInputChange = (e) => {
         const newFilter = e.target.value;

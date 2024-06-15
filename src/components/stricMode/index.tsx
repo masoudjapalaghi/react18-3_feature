@@ -2,11 +2,17 @@ const StrictModePage = () => {
   return (
     <div>
       <h3>Strict Mode enables the following checks in development:</h3>
-      <h4>Your components will re-render an extra time to find bugs caused by impure rendering.</h4>
-      <h4>Your components will re-run Effects an extra time to find bugs caused by missing Effect cleanup.</h4>
-      <h4>Your components will be checked for usage of deprecated APIs.</h4>
-
-        All of these checks are development-only and do not impact the production build.
+      <div>Enabling Strict Mode for entire app</div>
+      <br />
+      <div>Enabling Strict Mode for a part of the app</div>
+      <br />
+      <div>Fixing bugs found by double rendering in development</div>
+      <br />
+      <div>Fixing bugs found by re-running Effects in development</div>
+      <br />
+      <div>Fixing deprecation warnings enabled by Strict Mode</div>
+      <br />
+      <div>All of these checks are development-only and do not impact the production build.</div>
     </div>
   );
 };

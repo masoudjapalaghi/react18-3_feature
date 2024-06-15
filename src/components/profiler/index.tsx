@@ -11,7 +11,7 @@ const ProfilerPage = () => {
   return (
     <Profiler id="App" onRender={onRender}>
       <div style={{ backgroundColor: getRandomColor() }}>
-        <span onClick={() => toggle((prev) => !prev)}>Profiler {statusToggle}</span>
+        <span onClick={() => toggle((prev) => !prev)}>Profiler {statusToggle ? "true" : "false"}</span>
         <NestedUpdate />
       </div>
     </Profiler>
